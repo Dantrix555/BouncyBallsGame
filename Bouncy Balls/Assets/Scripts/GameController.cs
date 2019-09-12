@@ -7,8 +7,6 @@ using UnityEngine.SceneManagement;
 public class GameController : MonoBehaviour
 {
     public GameObject _point;
-    public GameObject _10points;
-    public GameObject _20points;
     public Text _scoreText;
     public Text _timeText;
     public Text _gameOverText;
@@ -16,6 +14,7 @@ public class GameController : MonoBehaviour
     public bool _gameOver;
     private int _randomGenerator;
     private int _pointsAmount;
+    private List<int> _remainingPoints;
     private float _positionX;
     private float _positionY;
     private float _time;
@@ -23,35 +22,23 @@ public class GameController : MonoBehaviour
     void Start()
     {
         _time = 60;
-        _pointsAmount = 0;
+        _pointsAmount = 20;
+        _remainingPoints = new List<int>();
         //Update the score text to zero points
         _totalScore = 0;
         UpdateTexts(_scoreText, "Score: " + _totalScore);
         //Spawn 20 random points Game Objects
         int i;
-        for(i = 0; i < 20; i++)
+        for(i = 0; i < _pointsAmount; i++)
         {
-            //Set the random value to determine which point game object will be spawned
-            _randomGenerator = Random.Range(1,5);
             //Set the starting positions of the point game object
             _positionX = Random.Range(-7, 7);
             _positionY = Random.Range(-3.2f, 3.2f);
             GameObject _instatiatedPoint;
-            //Instanciate the game object and attach this script to the points controller script
-            if(_randomGenerator == 1)
-            {
-                _instatiatedPoint = Instantiate(_20points, new Vector2(_positionX, _positionY), Quaternion.identity);
-            }    
-            else if(_randomGenerator == 2)
-            {
-                _instatiatedPoint = Instantiate(_10points, new Vector2(_positionX, _positionY), Quaternion.identity);
-            }  
-            else
-            {
-                _instatiatedPoint = Instantiate(_point, new Vector2(_positionX, _positionY), Quaternion.identity);
-            }
+            _instatiatedPoint = Instantiate(_point, new Vector2(_positionX, _positionY), Quaternion.identity);
             _instatiatedPoint.GetComponent<PointsController>()._gameController = this;
-            _pointsAmount++;
+            _instatiatedPoint.GetComponent<PointsController>()._maxScoreValuePosible = _pointsAmount;
+            _remainingPoints.Add(i);
         }
     }
 
@@ -99,5 +86,19 @@ public class GameController : MonoBehaviour
     public void UpdatePointsAmount()
     {
         _pointsAmount--;
+    }
+
+    public bool WasDestroyedPointBefore(int _score)
+    {
+        int i;
+        for(i = 0; i < _pointsAmount; i++)
+        {
+            if(_score == _remainingPoints[i])
+            {
+                _remainingPoints.RemoveAt(i);
+                return false;
+            }
+        }
+        return true;
     }
 }

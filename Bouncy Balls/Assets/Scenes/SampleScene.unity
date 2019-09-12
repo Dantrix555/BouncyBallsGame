@@ -262,11 +262,11 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 20
+    m_MaxSize: 40
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Game Over
@@ -343,11 +343,11 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 17
+    m_MaxSize: 30
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Time:'
@@ -477,11 +477,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72144f3c6a7684640bab275ec4feae4c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _point: {fileID: 6134863523832294964, guid: d3dd887b3fbfef340a1f33eaef1f78d2, type: 3}
-  _10points: {fileID: 4060748032595325064, guid: b64d70927fda2f943ab51481779eb3cb,
-    type: 3}
-  _20points: {fileID: 9103263109072833722, guid: 1044817261c5f63489e8cca73ff3ff92,
-    type: 3}
+  _point: {fileID: 2627520415901814231, guid: d3dd887b3fbfef340a1f33eaef1f78d2, type: 3}
   _scoreText: {fileID: 1202268226}
   _timeText: {fileID: 404000081}
   _gameOverText: {fileID: 261925926}
@@ -710,11 +706,11 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 10
-    m_MaxSize: 17
+    m_MaxSize: 30
     m_Alignment: 3
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: 'Score:'
@@ -855,11 +851,11 @@ MonoBehaviour:
     m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 8
-    m_MaxSize: 10
+    m_MaxSize: 25
     m_Alignment: 4
     m_AlignByGeometry: 0
     m_RichText: 1
-    m_HorizontalOverflow: 0
+    m_HorizontalOverflow: 1
     m_VerticalOverflow: 0
     m_LineSpacing: 1
   m_Text: Press Q to Quit

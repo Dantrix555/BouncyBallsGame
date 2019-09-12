@@ -242,7 +242,7 @@ ScriptsOnlyBuild:
     className: Shadow
   - hash:
       serializedVersion: 2
-      Hash: 274019207277ad48b8f8c6d796575448
+      Hash: 550150afc7d9483fe0e76475e3e6f99f
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: PointsController
@@ -392,7 +392,7 @@ ScriptsOnlyBuild:
     className: AudioTrack
   - hash:
       serializedVersion: 2
-      Hash: 0e1b552c7bb6cbf5d844ba18d3b9c173
+      Hash: 310aba6080d968876af6b39294b7f7b0
     assemblyName: Assembly-CSharp.dll
     namespaceName: 
     className: GameController
@@ -513,4 +513,5 @@ ScriptsOnlyBuild:
   platform: 5
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: E:/Programming/Unity/Projects/Bouncy Balls/Builds/Bouncy Balls.exe
+  playerPath: E:/Programming/Unity/Projects/Bouncy Balls Project/BouncyBallsGame/Bouncy
+    Balls/Builds/Bouncy Balls.exe
