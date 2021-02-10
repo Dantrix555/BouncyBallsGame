@@ -1,0 +1,24 @@
+
+\.vs/
+
+"Bouncy Balls/Library/"
+
+"Bouncy Balls/Logs/"
+
+"Bouncy Balls/Builds/"
+
+obj/
+
+Temp/
+
+2019_Motivatic\.csproj
+
+2019_Motivatic\.sln
+
+Assembly-CSharp\.csproj
+
+Unity\.PackageManagerUI\.Editor\.csproj
+
+ProjectSettings/ProjectVersion\.txt
+
+Packages/manifest\.json
