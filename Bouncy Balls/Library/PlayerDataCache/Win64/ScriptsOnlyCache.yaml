@@ -5,18 +5,10 @@ ScriptsOnlyBuild:
     - PointsController
     Unity.2D.Tilemap.Editor.dll:
     - UnityEditor.Tilemaps.GridPaintingState
-    - UnityEditor.Tilemaps.GridPaletteBrushes
-    - UnityEditor.Tilemaps.GridPalettes
     - UnityEditor.Tilemaps.SceneViewGridManager
     - UnityEditor.Tilemaps.TileDragAndDropManager
     Unity.Rider.Editor.dll:
     - Packages.Rider.Editor.UnitTesting.CallbackData
-    UnityEditor.Graphs.dll:
-    - UnityEditor.Graphs.AnimationBlendTree.Graph
-    - UnityEditor.Graphs.AnimationBlendTree.GraphGUI
-    - UnityEditor.Graphs.AnimationStateMachine.Graph
-    - UnityEditor.Graphs.AnimationStateMachine.GraphGUI
-    - UnityEditor.Graphs.AnimatorControllerTool
     UnityEditor.TestRunner.dll:
     - UnityEditor.TestTools.TestRunner.Api.CallbacksHolder
     - UnityEditor.TestTools.TestRunner.TestListCacheData
@@ -55,21 +47,21 @@ ScriptsOnlyBuild:
     - Class: 104
       Script: {instanceID: 0}
     - Class: 114
-      Script: {instanceID: 11254}
+      Script: {instanceID: 11252}
     - Class: 114
-      Script: {instanceID: 11424}
+      Script: {instanceID: 11422}
     - Class: 114
-      Script: {instanceID: 11464}
+      Script: {instanceID: 11462}
     - Class: 114
-      Script: {instanceID: 11844}
+      Script: {instanceID: 11842}
     - Class: 114
-      Script: {instanceID: 11884}
+      Script: {instanceID: 11882}
     - Class: 114
-      Script: {instanceID: 12802}
+      Script: {instanceID: 12800}
     - Class: 114
-      Script: {instanceID: 12810}
+      Script: {instanceID: 12808}
     - Class: 114
-      Script: {instanceID: 13194}
+      Script: {instanceID: 13192}
     - Class: 115
       Script: {instanceID: 0}
     - Class: 128
@@ -530,5 +522,5 @@ ScriptsOnlyBuild:
   platform: 19
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
-  playerPath: D:/Programming/Unity/Projects/BouncyBallsGame/Bouncy Balls/Builds/Bouncy
-    Balls.exe
+  playerPath: C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins/.jenkins/jobs/Bouncy
+    Balls/builds/22/output/Bouncy Balls
