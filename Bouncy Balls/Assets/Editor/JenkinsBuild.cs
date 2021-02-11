@@ -54,8 +54,19 @@ public class JenkinsBuild
     {
         var args = FindArgs();
 
-        string fullPathAndName = args.targetDir + args.appName;
+        string fullPathAndName = args.targetDir + args.appName + ".apk";
         BuildProject(EnabledScenes, fullPathAndName, BuildTargetGroup.Standalone, BuildTarget.Android, BuildOptions.None);
+    }
+    
+    // ------------------------------------------------------------------------
+    // called from Jenkins
+    // ------------------------------------------------------------------------
+    public static void BuildIOS()
+    {
+        var args = FindArgs();
+
+        string fullPathAndName = args.targetDir + args.appName;
+        BuildProject(EnabledScenes, fullPathAndName, BuildTargetGroup.Standalone, BuildTarget.iOS, BuildOptions.None);
     }
 
     private static Args FindArgs()

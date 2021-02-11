@@ -523,4 +523,4 @@ ScriptsOnlyBuild:
   scenePathNames:
   - Assets/Scenes/SampleScene.unity
   playerPath: C:/Windows/system32/config/systemprofile/AppData/Local/Jenkins/.jenkins/jobs/Bouncy
-    Balls/builds/22/output/Bouncy Balls
+    Balls/builds/23/output/Bouncy Balls.exe
