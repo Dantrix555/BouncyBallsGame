@@ -55,7 +55,6 @@ public class JenkinsBuild
         var args = FindArgs();
 
         string fullPathAndName = args.targetDir + args.appName;
-        EditorUserBuildSettings.exportAsGoogleAndroidProject = true;
         BuildProject(EnabledScenes, fullPathAndName, BuildTargetGroup.Android, BuildTarget.Android, BuildOptions.None);
     }
     
@@ -143,6 +142,9 @@ public class JenkinsBuild
         }
 
         // https://docs.unity3d.com/ScriptReference/BuildPipeline.BuildPlayer.html
+
+        EditorUserBuildSettings.exportAsGoogleAndroidProject = true;
+
         BuildReport buildReport = BuildPipeline.BuildPlayer(scenes, targetDir, buildTarget, buildOptions);
         BuildSummary buildSummary = buildReport.summary;
         if (buildSummary.result == BuildResult.Succeeded)
