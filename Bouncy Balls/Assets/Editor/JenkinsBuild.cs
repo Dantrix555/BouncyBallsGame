@@ -54,7 +54,7 @@ public class JenkinsBuild
     {
         var args = FindArgs();
 
-        string fullPathAndName = args.targetDir + args.appName;
+        string fullPathAndName = args.targetDir + args.appName + ".apk";
         BuildProject(EnabledScenes, fullPathAndName, BuildTargetGroup.Android, BuildTarget.Android, BuildOptions.None);
     }
     
