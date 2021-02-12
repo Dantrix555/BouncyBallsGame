@@ -54,8 +54,10 @@ public class JenkinsBuild
     {
         var args = FindArgs();
 
+        EditorUserBuildSettings.androidBuildSystem = AndroidBuildSystem.VisualStudio;
+
         string fullPathAndName = args.targetDir + args.appName + ".apk";
-        BuildProject(EnabledScenes, fullPathAndName, BuildTargetGroup.Android, BuildTarget.Android, BuildOptions.CompressWithLz4);
+        BuildProject(EnabledScenes, fullPathAndName, BuildTargetGroup.Android, BuildTarget.Android, BuildOptions.None);
     }
     
     // ------------------------------------------------------------------------
