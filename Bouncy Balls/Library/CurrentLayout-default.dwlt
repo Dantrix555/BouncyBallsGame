@@ -678,20 +678,20 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-    - Assets/Plugins/Android
+    - Assets/Editor
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-  - Assets/Plugins/Android
+  - Assets/Editor
   m_LastFoldersGridSize: 67
   m_LastProjectPath: D:\Programming\Unity\Projects\BouncyBallsGame\Bouncy Balls
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
     scrollPos: {x: 0, y: 0}
-    m_SelectedIDs: 64350000
-    m_LastClickedID: 13668
-    m_ExpandedIDs: 00000000163500006235000000ca9a3b
+    m_SelectedIDs: 1c350000
+    m_LastClickedID: 13596
+    m_ExpandedIDs: 0000000016350000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -746,7 +746,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c6230000aed6ffffe624000040250000f4260000ac2900002a280000dc2400007a26000042250000e02400000000000042bafdff02c0fdffde32000006340000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
