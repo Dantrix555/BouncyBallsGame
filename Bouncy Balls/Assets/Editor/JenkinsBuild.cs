@@ -54,6 +54,8 @@ public class JenkinsBuild
     {
         var args = FindArgs();
 
+        EditorPrefs.SetString("AndroidSdkRoot", "D:/Programming/Android/AndroidSDK");
+
         string fullPathAndName = args.targetDir + args.appName;
         BuildProject(EnabledScenes, fullPathAndName, BuildTargetGroup.Android, BuildTarget.Android, BuildOptions.None);
     }
